@@ -3,192 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Página de Tributo: Marron 5</title>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-
-    <h2>Formulários HTML</h2>
-
-    <!-- Primeiro Formulario -->
-    <!-- Atributos do Formulario -->
-    <form action="register.php" method="GET">
-
-        <div>
-        <label>Nome:</label>
-        <input type="text" />
+    <div><!--cabeçalho-->
+        <div class="container">
+            <h1 class="main-title"> The  Maroon 5</h1>
+            <p class="main-paragraph">Maroon 5 é uma banda dos Estados Unidos de pop que se originou em Los Angeles, Califórnia. </p>
         </div>
-
-        <!-- 3 atributo name -->
-        <div>
-            <label for="age">Idade:</label>
-            <input type="text" name="age" />
-        </div>
-
-        <!-- Select -->
-
-        <div>
-            <label for="job">Selecione a sua profissão</label>
-            <select name="job">
-                <option value="programador">Programador</option>
-                <option value="tester">tester/QA</option>
-                <option value="devops">DevOps</option>
-            </select>
-        </div>
-
-        <!-- Atributo selected -->
-        <div>
-            <label for="contract">Você leu os termos do contrato?</label>
-            <select name="contract">
-                <option value="sim">Sim</option>
-                <option value="não" selected>Não</option>
-            </select>
-        </div>
-
-        <!-- Multiplas seleções/opções -->
-        <div>
-            <label for="items">Selecione os itens desejados</label>
-            <select name="items" multiple>
-                <option value="pera">Pera</option>
-                <option value="arroz">arroz</option>
-                <option value="uva">Uva</option>
-                <option value="Granola">Granola</option>
-            </select>
-        </div>
-
-        <!-- Textarea -->
-        <div>
-            <label for="comment">Escreva abaixo o que você achou do post:</label>
-            <textarea name="comment"></textarea>
-        </div>
-
-        <!-- Fieldset e legend -->
-        <div>
-            <fieldset>
-            <legend>preencha as suas informações:</legend>
-            <label for="fistname">Nome:</label>
-            <input type="text" name="fistname">
-            <label for="lastname">Sobrenome:</label>
-            <input type="text" name="lastname">
-            </fieldset>
-        </div>
-
-         <!-- datalist -->
-         <div>
-            <label for="falvor">Escolhar o sabor:</label>
-            <input type="text" list="flavors" name="flavor">
-
-            <datalist id="flavors">
-                <option value="Cereja"></option>
-                <option value="Morango"></option>
-                <option value="Abacaxi"></option>
-                <option value="Chocolate"></option>
-                <option value="Amora"></option>
-                <option value="Maça"></option>
-                <option value="Chimarrão"></option>
-                <option value="Cenoura"></option>
-            </datalist>
-        </div>
-
-        <!-- Senha -->
-        <div>
-            <label for="password">Digite a sua senha:</label>
-            <input type="password" name="password">
-        </div>
-
-        <!--Radio Button-->
-        <div>
-            <label for="car_model">Escolha o modelo do seu carro:</label>
-            <div class="radio">
-                <input type="radio" value="bmw" name="car_model">
-                <label for="bmw">BMW</label>
-            </div>
-        
-            <div class="radio">
-                <input type="radio" value="ferrari" name="car_model">
-                <label for="ferrari">Ferrari</label>
-            </div>
-            
-            <div class="radio">
-                <input type="radio" value="ram rampage" name="car_model">
-                <label for="ram rampage"> RAM Rampage</label>
-            </div>
-        </div>
-
-        <!-- checkbox-->
-        <div>
-            <label for="optionals">Opcionais do carro:</label>
-            <div class="radio">
-                <input type="checkbox" name="optionals[]" value="big_tires">
-                <label for="big_tires">Pneus Grnades</label>
-            </div>
-
-            <div class="radio">
-                <input type="checkbox" name="optionals[]" value="turbo_engine">
-                <label for="turbo_engine">Motor Turbo</label>
-            </div>
-
-            <div class="radio">
-                <input type="checkbox" name="optionals[]" value="hybrid">
-                <label for="hybrid">Hibrido</label>
-            </div>
-        </div>
-
-        <!-- datas -->
-        <div>
-            <label for="birthday">Data de Nascimento</label>
-            <input type="date" name="birthday">
-        </div>
-
-        <!-- arquivos -->
-        <div>
-            <label for="image">Insira a sua imagem:</label>
-            <input type="file" name="image">
-        </div>
-
-        <!-- numeros -->
-        <div>
-            <label for="salary">Quanto você ganha no seu emprego atual?</label>
-            <input type="number" name="salary">
-        </div>
-
-        <!-- emails -->
-        <div>
-            <label for="email">Digite seu e-mail:</label>
-            <input type="email" name="email">
-        </div>
-
-        <!-- value -->
-        <div>
-            <label for="value">Digite algum valor::</label>
-            <input type="text" value="o meu valor é este" name="value">
-        </div>
-
-        <!-- disabled -->
-        <div>
-            <p>Tente mudar o valor:</p>
-            <input type="text" value="Não precisa preencher" disabled>
-        </div>
-
-        <!-- placeholder -->
-        <div>
-            <label for="currentjob">Digite a sua profissão:</label>
-            <input type="text" name="currentjob" placeholder="No que você está trabalhando agora?">
-        </div>
-
-        <!-- required -->
-        <div>
-            <label for="birthyear">Ano Nascimento</label>
-            <input type="text " placeholder="Digite o ano em que você nasceu" required>
-        </div>
-
-        <!-- Resetar Form -->
-        <input type="reset" value="Limpar" />
-
-        <!--Resetar-->
-        <input type="submit" value="Enviar" />
-
-    </form>
     
+        <!--Imagem-->
+        <div class="featured-image">
+            <figure>
+                <img src="img/Marron 5.jpg" alt="Banda Maroon 5">
+                <figcaption>Integrantes da Banda</figcaption>
+            </figure>
+    
+        </div>
+        <!-- Biografia -->
+        <div class="biography-container">
+            <h2>Sobre os primeiros anos da banda</h2>
+            <p>O grupo foi formado em 1994 com o nome de
+            <span class="bold">Kara's Flowers</span> seus membros ainda estavam no ensino médio. Com um line-up de Adam Levine, Jesse Carmichael, Mickey Madden e Ryan Dusick, <span class="bold">assinaram com a Reprise Records e lançaram um álbum, The Fourth World, em 1997.</span></p>
+    
+            <p>Kara's Flowers terminou seu contrato com a gravadora em 1999 e o plano A foi assim frustrado. Deixando Dusick e Madden para trás estudando em Los Angeles, Levine e Carmichael colocaram o plano B em ação nos dormitórios da faculdade de Nova York. Nos corredores, tocavam música gospel e as pessoas escutavam música que nunca tinham escutado antes, como Biggie Smalls, Missy Elliot e Jay-Z.
+            Reuniram-se com Madden e Dusick em Los Angeles e, com um novo pensamento musical veio o novo nome - Maroon - e, em 2001, um quinto membro: o guitarrista James Valentine. <span class="bold"> meses depois, eles trocam para Maroon 5, devido à já existência do nome anterior.</span></p>
+        </div>
+    
+        <!--Container de citação-->
+        <div class="quotes-container">
+            <blockquote>
+                "Desde a sua estreia em 2002, a banda já vendeu mais de 10 milhões de álbuns e mais de 30,8 milhões de singles digitais nos Estados Unidos, e mais de 27 milhões de álbuns em todo o mundo."
+            </blockquote>
+        </div>
+    
+        <!--curiosidades-->
+        <div class="curiosities-container">
+            <h2>Curiosades da Banda:</h2>
+            <ul>
+                <li>A musa: <span class="bold"> Jane Herman. </span> Ela é ex-namorada de Levine e está por trás de canções internacionalmente conhecidas como "This Love" e "She Will Be Loved". A única faixa de “Songs About Jane” que não fala sobre ela é “Harder To Breathe”.</li>
+                <li>Quarta vez no Brasil: eles tocaram por aqui em 2004, logo no início da carreira. Outra em 2008, no evento Pop Rock Brasil e a última em 2011, em apresentação no Rock in Rio.</li>
+                <li>Azul é a cor preferida de Adam Levine.</li>
+                <li>Raul Seixas, Jorge Benjor e Chico Science: o Maroon 5 ama esse trio da música nacional.</li>
+            </ul>
+        </div>
+    
+        <!--segunda citação-->
+        <div class="quotes-container">
+            <blockquote>
+                I was so high, I did not recognize <br />
+                The fire burning in her eyes <br />
+                The chaos that controlled my mind <br />
+                Whispered goodbye as she got on a plane <br />
+                Never to return again but always in my heart, oh <br />
+            </blockquote>
+            <p>This Love -  Maroon 5</p>
+        </div>
+    
+        <!--Mais Informações-->
+        <div class="moreinfo-conteiner">
+            <h2>Mais informações</h2>
+            <p>Você pode conhecer mais sobre a banda <a href="https://pt.wikipedia.org/wiki/Maroon_5">Clicando aqui</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
